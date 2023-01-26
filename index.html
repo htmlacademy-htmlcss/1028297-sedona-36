@@ -6,13 +6,13 @@
   </head>
   <body>
     <header class="page-header">
+      <a class="navigation-logo">
+        <img class="sedona-logo" src="#" alt="Логотип сайта о Седоне">
+      </a>
       <nav class="navigation">
-        <a class="navigation-logo">
-          <img class="logo" src="#" alt="Логотип сайта о Седоне">
-        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link">Главная</a>
+            <a class="navigation-link navigation-link-current">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -29,7 +29,6 @@
             <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
           </li>
           <li class="navigation-item">
-            <!--Не знаю, как оформить ссылку, чтобы она выглядела как кнопка, поэтому написал наобум =)-->
             <a class="navigation-link" href="catalog.html"><span class="button">Хочу сюда</span></a>
           </li>
         </ul>
@@ -38,7 +37,9 @@
     <main class="main-index">
       <h1 class="visually-hidden">Туристический городок Седона</h1>
       <section class="hero-block">
-        <img class="hero-block-image" alt="Добро пожаловать в Седону. Гранд Каньон — отстой">
+        <h2 class="visually-hidden">Горы Седоны</h2>
+        <img class="mountains-image" src="#" alt="Вид на горы Седоны">
+        <img class="welcome-image" src="#" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
       </section>
       <section class="advantages">
         <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -95,13 +96,14 @@
         <h2 class="mailing-title">Подпишитесь на рассылку</h2>
         <p class="mailing-lead">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
-          <input type="email" placeholder="Ваш e-mail">
+          <input type="email" placeholder="Ваш e-mail" required>
           <button class="mailing-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
       <section class="footer-socials">
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-socials-list">
           <li class="footer-socials-item">
             <a class="button" href="https://vk.com/htmlacademy">
@@ -119,6 +121,18 @@
             </a>
           </li>
         </ul>
+      </section>
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <address class="footer-contacts-address">
+          <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
+      </section>
+      <section class="footer-logo">
+        <h2 class="visually-hidden">Логотип разработчика</h2>
+        <a class="footer-logo-link" href="https://htmlacademy.ru">
+          <img class="htmlacademy-logo" src="#" alt="Логотип HTML Academy">
+        </a>
       </section>
     </footer>
   </body>
