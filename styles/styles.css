@@ -15,7 +15,69 @@
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  color: #000000;
+}
+
+.button {
+  color: white;
+  border-radius: 4px;
+  padding: 8px 50px;
+}
+
+.navigation-button {
+  background-color: #756157;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+.navigation-item {
+  list-style: none;
+}
+
+.hero-block {
+  background-image: url(../images/hero-background.jpg);
+  background-color:rgb(164, 211, 252);
+  background-repeat: no-repeat;
+  color: white;
+  background-size: 100% auto;
+  text-align: center;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-lead {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.advantages-wrapper {
+  color: #ffffff;
 }
