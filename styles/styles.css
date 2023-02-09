@@ -198,3 +198,127 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+/*Страница каталога*/
+.filters-wrapper {
+  background-image: url(../images/catalog-background.jpg);
+  background-color: #82B3D3;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color:#ffffff ;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-item {
+  font-size: 16px;
+}
+
+.breadcrumbs-link {
+  color:#ffffff;
+}
+
+.catalog-form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.control {
+  line-height: 23px;
+}
+
+.accept-button {
+  background-color: #82B3D3;
+}
+
+.reset-button {
+  background-color: transparent;
+}
+
+.hotel-number {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.product-card-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-card-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.details-button {
+  background-color: #756157;
+}
+
+.in-favorites-button {
+  background-color: #7DB54F;
+}
+
+.add-favorites-button {
+  background-color: #82B3D3;
+}
+
+.rating-button {
+  background-color: #F2F2F2;
+  color: #333333;
+  font-weight: 400;
+}
+
+.product-card-accommodation-type {
+  color: #333333;
+}
+
+.product-card-price {
+  color: #333333;
+}
+
+.pagination-link {
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-button {
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.catalog-mailing {
+  background-image: none;
+  background-color: #ffffff;
+}
+
+.catalog-mailing-title {
+  color: #000000;
+}
+
+.catalog-mailing-lead {
+  color:#333333;
+}
+
+.catalog-mailing-input {
+  background-color: #F2F2F2;
+}
