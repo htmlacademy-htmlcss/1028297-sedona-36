@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -29,13 +30,13 @@
             <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span><span class="favourites-number">12</span></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html"><span class="button">Хочу сюда</span></a>
+            <a class="navigation-link" href="catalog.html"><span class="button navigation-button">Хочу сюда</span></a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-inner">
-      <div class="wrapper">
+      <div class="filters-wrapper">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -116,8 +117,8 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit">Применить</button>
-            <button class="button" type="reset">Сбросить</button>
+            <button class="button accept-button" type="submit">Применить</button>
+            <button class="button reset-button" type="reset">Сбросить</button>
           </form>
         </section>
       </div>
@@ -157,15 +158,15 @@
             </a>
             <span class="product-card-accommodation-type">Гостиница</span>
             <span class="product-card-price">От 4000 Р</span>
-            <a class="product-card-button" href="#">Подробнее</a>
-            <button class="product-card-button" type="button">В избранное</button>
+            <a class="button details-button" href="#">Подробнее</a>
+            <button class=" button add-favorites-button" type="button">В избранное</button>
             <ul class="product-rating">
               <li class="product-rating-star"></li>
               <li class="product-rating-star"></li>
               <li class="product-rating-star"></li>
               <li class="product-rating-star"></li>
             </ul>
-            <span class="product-card-button">Рейтинг: 8,5</span>
+            <span class="button rating-button">Рейтинг: 8,5</span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -174,15 +175,15 @@
             </a>
             <span class="product-card-accommodation-type">Гостиница</span>
             <span class="product-card-price">От 5000 Р</span>
-            <a class="product-card-button" href="#">Подробнее</a>
-            <button class="product-card-button" type="button">В избранном</button>
+            <a class="button details-button" href="#">Подробнее</a>
+            <button class="button in-favorites-button" type="button">В избранном</button>
             <ul class="product-rating">
               <li class="product-rating-star"></li>
               <li class="product-rating-star"></li>
               <li class="product-rating-star"></li>
               <li class="product-rating-star"></li>
             </ul>
-            <span class="product-card-button">Рейтинг: 9,2</span>
+            <span class="button rating-button">Рейтинг: 9,2</span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -191,14 +192,14 @@
             </a>
             <span class="product-card-accommodation-type">Гостиница</span>
             <span class="product-card-price">От 2500 Р</span>
-            <a class="product-card-button" href="#">Подробнее</a>
-            <button class="product-card-button" type="button">В избранное</button>
+            <a class="button details-button" href="#">Подробнее</a>
+            <button class="button add-favorites-button" type="button">В избранное</button>
             <ul class="product-rating">
               <li class="product-rating-star"></li>
               <li class="product-rating-star"></li>
               <li class="product-rating-star"></li>
             </ul>
-            <span class="product-card-button">Рейтинг: 6,9</span>
+            <span class="button rating-button">Рейтинг: 6,9</span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -207,13 +208,13 @@
             </a>
             <span class="product-card-accommodation-type">Гостиница</span>
             <span class="product-card-price">От 1500 Р</span>
-            <a class="product-card-button" href="#">Подробнее</a>
-            <button class="product-card-button" type="button">В избранное</button>
+            <a class="button details-button" href="#">Подробнее</a>
+            <button class="button add-favorites-button" type="button">В избранное</button>
             <ul class="product-rating">
               <li class="product-rating-star"></li>
               <li class="product-rating-star"></li>
             </ul>
-            <span class="product-card-button">Рейтинг: 5,0</span>
+            <span class="button rating-button">Рейтинг: 5,0</span>
           </li>
         </ul>
         <ul class="pagination">
@@ -237,12 +238,12 @@
           </li>
         </ul>
       </section>
-      <section class="mailing">
-        <h2 class="mailing-title">Подпишитесь на рассылку</h2>
-        <p class="mailing-lead">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="mailing catalog-mailing">
+        <h2 class="mailing-title catalog-mailing-title">Подпишитесь на рассылку</h2>
+        <p class="mailing-lead catalog-mailing-lead">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
-          <input type="email" placeholder="Ваш e-mail" required>
-          <button class="mailing-button" type="submit">Подписаться</button>
+          <input class="catalog-mailing-input" type="email" placeholder="Ваш e-mail" required>
+          <button class="button mailing-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
