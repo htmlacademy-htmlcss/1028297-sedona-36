@@ -56,6 +56,19 @@ body {
   color: #333333;
 }
 
+.subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.description {
+  color: #333333;
+  text-align: center;
+}
+
 .navigation-button {
   font-size: 16px;
   line-height: 20px;
@@ -89,12 +102,12 @@ body {
   text-align: center;
 }
 
-.street-image, .devil-bridge {
-  display: block;
+.white-subtitle, .white-description {
+  color: #ffffff;
 }
 
-.advantages-item {
-  background-color: white;
+.street-image, .devil-bridge {
+  display: block;
 }
 
 .background-basic {
@@ -109,24 +122,9 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-subtitle {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.advantages-wrapper {
-  color: #ffffff;
-}
-
 .tips-list {
   list-style: none;
   text-align: center;
-}
-
-.tips-subtitle {
-  text-transform: uppercase;
 }
 
 .booking-button {
