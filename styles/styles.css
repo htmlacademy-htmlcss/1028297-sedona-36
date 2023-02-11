@@ -41,6 +41,21 @@ body {
   text-decoration: none;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lead {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
 .navigation-button {
   font-size: 16px;
   line-height: 20px;
@@ -65,23 +80,8 @@ body {
   background-color:rgb(164, 211, 252);
   background-repeat: no-repeat;
   color: white;
-  background-size: 100% auto;
+  background-size: cover;
   text-align: center;
-}
-
-.advantages-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.advantages-lead {
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-  color: #333333;
 }
 
 .advantages-list {
@@ -113,25 +113,11 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .advantages-wrapper {
   color: #ffffff;
-}
-
-.tips-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.tips-lead {
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-  color: #333333;
 }
 
 .tips-list {
@@ -139,19 +125,8 @@ body {
   text-align: center;
 }
 
-.booking-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
+.tips-subtitle {
   text-transform: uppercase;
-}
-
-.booking-lead {
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-  color: #333333;
 }
 
 .booking-button {
@@ -162,24 +137,13 @@ body {
 
 .mailing {
   background-image: url(../images/mailing-background.jpg);
-  color: #ffffff;
   background-color: #82B3D3;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
-.mailing-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.mailing-lead {
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
+.mailing-title, .mailing-lead {
+  color: #ffffff;
 }
 
 .mailing-button {
@@ -204,7 +168,7 @@ body {
   background-image: url(../images/catalog-background.jpg);
   background-color: #82B3D3;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   color:#ffffff ;
 }
 
