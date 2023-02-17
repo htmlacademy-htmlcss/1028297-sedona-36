@@ -30,14 +30,23 @@ html {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  margin: 0;
+  height: 100%;
+  background-color: #F2F2F2;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-container {
@@ -85,6 +94,20 @@ body {
   font-size: 16px;
   line-height: 20px;
   background-color: #756157;
+}
+
+.page-header {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-link {
