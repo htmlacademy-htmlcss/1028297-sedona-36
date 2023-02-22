@@ -72,6 +72,8 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  width: 700px;
+  margin: 0 auto;
 }
 
 .lead {
@@ -79,6 +81,8 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  width: 700px;
+  margin: 0 auto;
 }
 
 .subtitle {
@@ -198,8 +202,16 @@ body {
 }
 
 .tips-list {
+  display: flex;
   list-style: none;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.tips-item {
+  width: 400px;
+  padding: 183px 85px 81px;
 }
 
 .booking-button {
