@@ -14,6 +14,12 @@
   font-display: swap;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -290,10 +296,22 @@ body {
   color:#ffffff ;
 }
 
+.inner-header {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .breadcrumbs-item {
@@ -304,10 +322,67 @@ body {
   color:#ffffff;
 }
 
+.catalog-form {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.catalog-form-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-right: 70px;
+  width: 151px;
+}
+
+.catalog-form-group:nth-child(3) {
+  margin-left: 70px;
+  width: 288px;
+}
+
 .catalog-form-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.catalog-form-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-form-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 191px;
+}
+
+.sort {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.hotel-number {
+  width: 338px;
+  margin-right: 200px;
+}
+
+.select-control {
+  width: 292px;
+  margin-right: 70px;
+}
+
+.layout-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 160px;
+  justify-content: space-around;
 }
 
 .control {
