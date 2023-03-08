@@ -102,24 +102,21 @@ body {
 }
 
 .page-header {
+  display: flex;
   width: 1060px;
   margin: 0 auto;
-}
-
-.navigation-logo {
-  position: absolute;
-  z-index: 2;
 }
 
 .navigation-button {
   font-size: 16px;
   line-height: 20px;
   background-color: #756157;
+  padding: 8px 34px;
 }
 
 .navigation {
   display: flex;
-  margin-left: 184px;
+  flex-grow: 1;
 }
 
 .navigation-list {
@@ -136,21 +133,24 @@ body {
   margin-left: auto;
 }
 
-.navigation-list:first-child .navigation-item:not(:nth-child(3n)) {
-  margin-right: 32px;
-}
-
 .navigation-link {
+  display: block;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-decoration: none;
   color: #000000;
   text-align: center;
+  padding: 20px 16px;
 }
 
 .navigation-item {
   list-style: none;
+}
+
+.navigation-user .navigation-link {
+  min-width: 44px;
+  min-height: 64px;
 }
 
 .hero-block {
@@ -160,10 +160,18 @@ body {
   color: white;
   background-size: cover;
   text-align: center;
+  padding-top: 51px;
+  padding-bottom: 82px;
+}
+
+.advantages-title-wrapper {
+  padding-top: 69px;
+  padding-bottom: 69px;
 }
 
 .advantages-title {
   width: 620px;
+  margin-bottom: 25px;
 }
 
 .advantages-lead {
@@ -181,6 +189,7 @@ body {
 
 .advantages-item {
   flex-grow: 1;
+  min-height: 385px;
 }
 
 .advantages-item:first-child, .advantages-item:last-child {
@@ -188,8 +197,22 @@ body {
 }
 
 .advantages-wrapper {
+  display: flex;
+  flex-direction: column;
   width: 230px;
+  height: 100%;
   margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  margin: 0;
+  margin-bottom: 62px;
+}
+
+.description {
+  margin: 0;
 }
 
 .white-subtitle, .white-description {
@@ -212,8 +235,14 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.tips-title-wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .tips-title {
   width: 505px;
+  margin-bottom: 20px;
 }
 
 .tips-lead {
@@ -229,20 +258,33 @@ body {
 }
 
 .tips-item {
-  width: 400px;
+  width: 230px;
+  min-height: 223px;
   padding: 81px 85px;
+  flex-grow: 1;
 }
 
-.booking {
-  text-align: center;
+.booking-wrapper {
   width: 592px;
   margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  text-align: center;
+}
+
+.booking-title {
+  margin-bottom: 20px;
+}
+
+.booking-lead {
+  margin-bottom: 54px;
 }
 
 .booking-button {
   font-size: 20px;
   line-height: 36px;
   background-color: #756157;
+  padding: 8px 50px;
 }
 
 .mailing {
@@ -256,6 +298,16 @@ body {
 .mailing-wrapper {
   width: 684px;
   margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 104px;
+}
+
+.mailing-title {
+  margin-bottom: 20px;
+}
+
+.mailing-lead {
+  margin-bottom: 54px;
 }
 
 .mailing-form {
@@ -277,8 +329,7 @@ body {
 
 .mailing-button {
   background-color: #82B3D3;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 8px 50px;
   border-radius: 0 4px 4px 0;
 }
 
@@ -287,6 +338,8 @@ body {
   justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .footer-socials-list {
@@ -309,23 +362,30 @@ body {
 }
 
 /*Страница каталога*/
+
 .filters-wrapper {
   background-image: url(../images/catalog-background.jpg);
   background-color: #82B3D3;
   background-repeat: no-repeat;
   background-size: cover;
-  color:#ffffff ;
+  color:#ffffff;
+  padding: 70px;
+  padding-top: 35px;
+  margin-bottom: 50px;
 }
 
 .inner-header {
   width: 1060px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs {
@@ -385,11 +445,22 @@ body {
   display: flex;
   width: 1060px;
   margin: 0 auto;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.layout-button {
+  width: 16px;
+  height: 14px;
+  padding: 17px;
+  border: #E5E5E5 solid 2px;
+  border-radius: 4px;
 }
 
 .product {
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .product-list {
@@ -429,12 +500,16 @@ body {
 
 .hotel-number {
   width: 338px;
+  margin: 0;
   margin-right: 200px;
 }
 
 .select-control {
   width: 292px;
+  height: 49px;
   margin-right: 70px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
 .layout-list {
@@ -452,10 +527,12 @@ body {
 
 .accept-button {
   background-color: #82B3D3;
+  padding: 8px 50px;
 }
 
 .reset-button {
   background-color: transparent;
+  padding: 8px 57.5px;
 }
 
 .hotel-number {
@@ -463,6 +540,10 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.product-card-image {
+  margin-bottom: 16px;
 }
 
 .product-card-link {
@@ -474,35 +555,45 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.product-card-accommodation-type {
+  margin-bottom: 16px;
 }
 
 .details-button {
+  display: block;
   background-color: #756157;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  font-size: 16px;
+  padding: 8px 26px;
   width: 140px;
+  margin-bottom: 16px;
 }
 
 .in-favorites-button {
   background-color: #7DB54F;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  font-size: 16px;
+  padding: 8px 18px;
   width: 140px;
+  margin-bottom: 16px;
 }
 
 .add-favorites-button {
   background-color: #82B3D3;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  font-size: 16px;
+  padding: 8px 20px;
   width: 140px;
+  margin-bottom: 16px;
 }
 
 .rating-button {
   background-color: #F2F2F2;
+  font-size: 16px;
   color: #333333;
   font-weight: 400;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 9px 22px 8px 23px;
   width: 140px;
 }
 
@@ -523,6 +614,7 @@ body {
   margin: 0 auto;
   padding: 0;
   list-style: none;
+  margin-top: 60px;
 }
 
 .pagination-item:not(:last-child) {
@@ -530,6 +622,7 @@ body {
 }
 
 .pagination-link {
+  display: block;
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
@@ -538,6 +631,9 @@ body {
   line-height: 36px;
   padding: 12px 5px;
   min-width: 60px;
+  min-height: 60px;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .pagination-current {
@@ -552,6 +648,8 @@ body {
   font-size: 22px;
   line-height: 26px;
   border: none;
+  width: 60px;
+  height: 60px;
 }
 
 .catalog-mailing {
@@ -561,8 +659,10 @@ body {
 
 .catalog-mailing-title {
   color: #000000;
+  margin-bottom: 20px;
 }
 
 .catalog-mailing-lead {
   color:#333333;
+  margin-bottom: 54px;
 }
