@@ -114,6 +114,10 @@ body {
   padding: 8px 34px;
 }
 
+.sedona-logo {
+  display: block;
+}
+
 .navigation {
   display: flex;
   flex-grow: 1;
@@ -199,9 +203,10 @@ body {
 .advantages-wrapper {
   display: flex;
   flex-direction: column;
-  width: 230px;
+  width: 400px;
   height: 100%;
   margin: 0 auto;
+  padding: 102px 85px;
   align-items: center;
   justify-content: center;
 }
@@ -221,6 +226,9 @@ body {
 
 .street-image, .devil-bridge {
   display: block;
+  width: 800px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .background-basic {
@@ -258,7 +266,7 @@ body {
 }
 
 .tips-item {
-  width: 230px;
+  width: 400px;
   min-height: 223px;
   padding: 81px 85px;
   flex-grow: 1;
@@ -478,6 +486,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
   width: 340px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
@@ -501,13 +511,14 @@ body {
 .hotel-number {
   width: 338px;
   margin: 0;
-  margin-right: 200px;
+  margin-right: auto;
 }
 
 .select-control {
   width: 292px;
   height: 49px;
   margin-right: 70px;
+  margin-left: 20px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
@@ -556,11 +567,11 @@ body {
   font-size: 24px;
   line-height: 28px;
   margin: 0;
-  margin-bottom: 16px;
 }
 
 .product-card-accommodation-type {
-  margin-bottom: 16px;
+  color: #333333;
+  width: 140px;
 }
 
 .details-button {
@@ -569,7 +580,6 @@ body {
   font-size: 16px;
   padding: 8px 26px;
   width: 140px;
-  margin-bottom: 16px;
 }
 
 .in-favorites-button {
@@ -577,7 +587,6 @@ body {
   font-size: 16px;
   padding: 8px 18px;
   width: 140px;
-  margin-bottom: 16px;
 }
 
 .add-favorites-button {
@@ -585,7 +594,6 @@ body {
   font-size: 16px;
   padding: 8px 20px;
   width: 140px;
-  margin-bottom: 16px;
 }
 
 .rating-button {
@@ -594,11 +602,6 @@ body {
   color: #333333;
   font-weight: 400;
   padding: 9px 22px 8px 23px;
-  width: 140px;
-}
-
-.product-card-accommodation-type {
-  color: #333333;
   width: 140px;
 }
 
