@@ -1037,6 +1037,10 @@ body {
   z-index: 2;
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal-hotel-search {
   position: relative;
   min-width: 717px;
@@ -1290,8 +1294,4 @@ body {
 
 .tooltip:hover .tooltip-text {
   display: block;
-}
-
-.hidden {
-  overflow: hidden;
 }
