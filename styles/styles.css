@@ -605,6 +605,18 @@ body {
   background: url(../images/breadcrumbs-icons/home-icon.svg) no-repeat 50% 50%;
 }
 
+.breadcrumbs-home:hover {
+  opacity: 60%;
+}
+
+.breadcrumbs-home:focus {
+  color:#ffffff;
+}
+
+.breadcrumbs-home:active {
+  opacity: 30%;
+}
+
 .catalog-form {
   display: flex;
   width: 1060px;
@@ -670,6 +682,7 @@ body {
   height: 48px;
   border: #E5E5E5 solid 2px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .layout-button:hover {
@@ -792,6 +805,7 @@ body {
 .accept-button {
   background-color: #82B3D3;
   padding: 8px 50px;
+  cursor: pointer;
 }
 
 .accept-button:hover {
@@ -809,6 +823,7 @@ body {
 .reset-button {
   background-color: transparent;
   padding: 8px 57.5px;
+  cursor: pointer;
 }
 
 .reset-button:hover {
@@ -867,6 +882,20 @@ body {
   font-size: 16px;
   padding: 8px 26px;
   width: 140px;
+  cursor: pointer;
+}
+
+.details-button:hover {
+  background-color: #615048;
+}
+
+.details-button:focus {
+  background-color: #615048;
+}
+
+.details-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .in-favorites-button {
@@ -874,6 +903,19 @@ body {
   font-size: 16px;
   padding: 8px 18px;
   width: 140px;
+  cursor: pointer;
+}
+
+.in-favorites-button:hover {
+  background-color: #6c9e42;
+}
+
+.in-favorites-button:focus {
+  background-color: #6c9e42;
+}
+
+.in-favorites-button:active {
+  background-color: #7db54f;
 }
 
 .add-favorites-button {
@@ -881,6 +923,19 @@ body {
   font-size: 16px;
   padding: 8px 20px;
   width: 140px;
+  cursor: pointer;
+}
+
+.add-favorites-button:hover {
+  background-color: #68a2ca;
+}
+
+.add-favorites-button:focus {
+  background-color: #68a2ca;
+}
+
+.add-favorites-button:active {
+  background-color: #82b3d3;
 }
 
 .rating-button {
@@ -924,6 +979,19 @@ body {
   min-height: 60px;
   text-align: center;
   border-radius: 4px;
+}
+
+.pagination-status:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-status:focus {
+  background-color: #68A2CA;
+}
+
+.pagination-status:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-current {
