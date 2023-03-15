@@ -26,6 +26,8 @@
   height: 1px;
   margin: -1px;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -640,12 +642,48 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin-bottom: 32px;
 }
 
 .catalog-form-list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.catalog-form-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  font-size: 18px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.control-check {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.control-input[type="checkbox"]:checked + .control-check::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../images/tick-icon.svg) no-repeat;
 }
 
 .catalog-form-button-wrapper {
@@ -710,7 +748,7 @@ body {
 }
 
 .layout-current {
-  border: #000000 solid 2px;
+  box-shadow: 0 0 0 2px #000000 inset;
 }
 
 .product {
@@ -779,8 +817,15 @@ body {
   height: 49px;
   margin-right: 70px;
   margin-left: 20px;
-  border: 2px solid #E5E5E5;
+  padding: 14px 50px 14px 20px;
+  border: none;
+  box-shadow: 0 0 0 2px #e6e6e6 inset;
   border-radius: 4px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   color: #333333;
 }
 
