@@ -1128,6 +1128,19 @@ body {
   cursor: pointer;
 }
 
+.modal-form .button-submit:hover {
+  background-color: #68A2CA;
+}
+
+.modal-form .button-submit:focus {
+  background-color: #68A2CA;
+}
+
+.modal-form .button-submit:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .modal-form-label {
   font-weight: 700;
   font-size: 20px;
@@ -1199,23 +1212,36 @@ body {
 }
 
 .modal-range-button {
+  display: flex;
   position: relative;
   padding: 14px 10px;
   border: none;
   border-radius: 5px;
   background: none;
+  align-items: center;
 }
 
-.modal-range-button:hover {
+.plus-button, .minus-button {
+  fill: #756157;
+  fill-opacity: 0.3;
+}
+
+.plus-button:hover, .minus-button:hover {
   cursor: pointer;
+  fill: #000000;
+  fill-opacity: 1;
 }
 
-.modal-range-button:focus-visible {
-  outline: none;
+.modal-range-button .plus-button:focus-visible, .modal-range-button .minus-button:focus-visible {
+  fill: #000000;
+  fill-opacity: 1;
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
 }
 
-.modal-range-button:disabled {
-  cursor: default;
+.plus-button:active, .minus-button:active {
+  fill: #756157;
+  fill-opacity: 0.3;
 }
 
 .modal-input[type="number"] {
