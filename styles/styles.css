@@ -144,19 +144,19 @@ body {
 .navigation {
   display: flex;
   flex-grow: 1;
+  margin-left: 28px;
 }
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 340px;
+  max-width: 400px;
   align-items: center;
   margin: 0;
   padding: 0;
 }
 
 .navigation-user {
-  max-width: 312px;
   margin-left: auto;
 }
 
@@ -273,6 +273,7 @@ body {
 .advantages-title-wrapper {
   padding-top: 69px;
   padding-bottom: 69px;
+  margin-bottom: 21px;
 }
 
 .advantages-title {
@@ -351,6 +352,11 @@ body {
 
 .background-basic {
   background-color: #82B3D3;
+  display: flex;
+}
+
+.devil-bridge {
+  order: -1;
 }
 
 .background-extra-1 {
@@ -877,7 +883,7 @@ body {
   width: 1060px;
   margin: 0 auto;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .layout-list {
@@ -1033,6 +1039,7 @@ body {
   background-color: #82B3D3;
   padding: 8px 50px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .accept-button:hover {
@@ -1051,6 +1058,7 @@ body {
   background-color: transparent;
   padding: 8px 50px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .reset-button:hover {
