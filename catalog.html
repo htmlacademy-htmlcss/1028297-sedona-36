@@ -94,43 +94,49 @@
                 <ul class="catalog-form-list">
                   <li class="catalog-form-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="accommodation-type" value="hotel" checked>
+                      <input class="control-input visually-hidden" type="radio" name="accommodation-type" value="hotel" checked>
+                      <span class="control-check"></span>
                       Гостиница
                     </label>
                   </li>
                   <li class="catalog-form-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="accommodation-type" value="motel">
+                      <input class="control-input visually-hidden" type="radio" name="accommodation-type" value="motel">
+                      <span class="control-check"></span>
                       Мотель
                     </label>
                   </li>
                   <li class="catalog-form-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="accommodation-type" value="apartments">
+                      <input class="control-input visually-hidden" type="radio" name="accommodation-type" value="apartments">
+                      <span class="control-check"></span>
                       Апартаменты
                     </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="catalog-form-group">
-                <legend class="catalog-form-title">Стоимость, Р:</legend>
-                <ul class="catalog-form-list">
-                  <li class="catalog-form-item">
-                    <label class="control">
-                      <input class="control-input" type="number" name="min-price" value="0">
-                      от
-                    </label>
-                  </li>
-                  <li class="catalog-form-item">
-                    <label class="control">
-                      <input class="control-input" type="number" name="max-price" value="9000">
-                      до
-                    </label>
-                  </li>
-                  <li class="catalog-form-item">
-                      <input class="control-input" type="range" name="range-price">
-                  </li>
-                </ul>
+                <legend class="catalog-form-title">Стоимость, ₽:</legend>
+                <div class="range-price-wrapper">
+                  <label class="price-label">
+                    <input class="range-input range-input-from" type="number" name="min-price" value="0">
+                    <span class="min-price-label">от</span>
+                  </label>
+                  <label class="price-label">
+                    <input class="range-input range-input-to" type="number" name="max-price" value="9000">
+                    <span class="max-price-label">до</span>
+                  </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Выставить минимальную стоимость</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Выставить максимальную стоимость</span>
+                    </button>
+                  </div>
+                </div>
               </fieldset>
               <div class="catalog-form-button-wrapper">
                 <button class="button accept-button" type="submit">Применить</button>
