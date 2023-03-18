@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/ptsans-400.woff2) format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   src: url(../fonts/ptsans-700.woff2);
@@ -448,23 +448,35 @@ body {
   margin-bottom: 54px;
 }
 
-.booking-button {
-  font-size: 20px;
-  line-height: 36px;
+.booking-link {
+  display: inline-block;
+  text-decoration: none;
+  max-width: 376px;
+  min-height: 52px;
   background-color: #756157;
   padding: 8px 50px;
+  border-radius: 4px;
+  text-align: center;
 }
 
-.booking-button:hover {
+.booking-button {
+  font-family: 'PT Sans', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.booking-link:hover {
   background-color: #615048;
   cursor: pointer;
 }
 
-.booking-button:focus-visible {
+.booking-link:focus-visible {
   background-color: #615048;
 }
 
-.booking-button:active {
+.booking-link:active {
   background-color: #756157;
   opacity: 30%;
 }
@@ -503,8 +515,36 @@ body {
   border: none;
   border-radius: 4px 0 0 4px;
   background-color: #f2f2f2;
+  font-family: 'PT Sans', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  outline: none;
+}
+
+.mailing-form-field:hover {
+  background-color: #e6e6e6;
+}
+
+.mailing-form-field:focus {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83b3d3 inset;
+}
+
+.mailing-form-field:focus:not(:placeholder-shown) {
+  background-color: #f2f2f2;
+  box-shadow: 0 0 0 2px #000000 inset;
+}
+
+.mailing-form-field:disabled {
+  background-color: #f4f3f3;
+}
+
+.mailing-form-field:disabled::placeholder {
+  color: rgba(0, 0, 0, 0.1);
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .mailing-title, .mailing-lead {
@@ -759,6 +799,28 @@ body {
   border-radius: 4px;
 }
 
+.control:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.control-input:focus-visible + .control-check {
+  outline: #83b3d3 solid 3px;
+}
+
+.control:active {
+  opacity: 30%;
+}
+
+.control-input:disabled + .control-check {
+  background-color: #868686;
+}
+
+.control:has(input:disabled):hover {
+  opacity: 1;
+  cursor: default;
+}
+
 .control-input[type="radio"] + .control-check {
   border-radius: 50%;
 }
@@ -817,6 +879,21 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
+.range-input:hover {
+  background-color: #e6e6e6;
+}
+
+.range-input:focus-visible {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83b3d3 inset;
+  outline: none;
+}
+
+.range-input:disabled {
+  background-color: #a4a4a4;
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .min-price-label {
   position: absolute;
   top: 50%;
@@ -865,6 +942,27 @@ body {
   cursor: pointer;
 }
 
+.range-toggle:hover {
+  background-color: #e6e6e6;
+}
+
+.range-toggle:focus-visible {
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.range-toggle:active {
+  box-shadow: 0 0 0 2px #83b3d3;
+}
+
+.range-toggle:disabled,
+.range-toggle:disabled:hover,
+.range-toggle:disabled:active {
+  background-color: #868686;
+  box-shadow: none;
+  cursor: default;
+}
+
 .toggle-min {
   top: 50%;
   left: 0;
@@ -880,7 +978,8 @@ body {
 .catalog-form-button-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-start;
+  padding-top: 56px;
   width: 191px;
   gap: 29px;
 }
@@ -954,7 +1053,6 @@ body {
   flex-wrap: wrap;
   width: 1060px;
   margin: 0 auto;
-  margin-bottom: 20px;
   list-style: none;
   padding: 0;
   justify-content: start;
@@ -1013,7 +1111,7 @@ body {
   border: none;
   box-shadow: 0 0 0 2px #e6e6e6 inset;
   border-radius: 4px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1098,6 +1196,7 @@ body {
 }
 
 .product-card-image {
+  display: block;
   margin-bottom: 16px;
 }
 
@@ -1339,6 +1438,7 @@ body {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 36px;
+  max-width: 540px;
 }
 
 .modal-form {
